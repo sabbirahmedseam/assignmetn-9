@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Cart from "../Cart/Cart";
+import Sjs from "../Sjs/Sjs";
 import './Topics.css'
 
 const Topics = () => {
@@ -9,10 +10,13 @@ const Topics = () => {
   //    console.log(data);
 
   return (
-    <div className="topic">
+    <div >
+     <Sjs></Sjs>
+      <div className="topic">
       {data.map((data) => (
         <Cart data={data} key={data.id}></Cart>
       ))}
+      </div>
     </div>
   );
 };

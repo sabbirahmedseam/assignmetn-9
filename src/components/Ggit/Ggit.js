@@ -8,10 +8,13 @@ const Ggit = ({ item }) => {
   const { correctAnswer, options, question } = item;
   // console.log(correctAnswer);
   // console.log(item);
+  const handleClick=(correctAnswer)=>{
+    alert(correctAnswer);
+  }
 
   return (
     <div >
-      <h3> Quiz:{question} <FontAwesomeIcon icon={faEye}></FontAwesomeIcon></h3>
+      <h3> Quiz:{question} <FontAwesomeIcon onClick={()=>handleClick(correctAnswer)}  icon={faEye}></FontAwesomeIcon></h3>
      <div className="gitt">
      {
         options.map((item,idx)=><Tcss key={idx} item={item}></Tcss>)

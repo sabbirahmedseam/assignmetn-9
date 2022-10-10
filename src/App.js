@@ -15,22 +15,28 @@ function App() {
       children: [
         {
           path: "/",
-          loader: async() => fetch("https://openapi.programming-hero.com/api/quiz"),
+          loader: async () =>
+            fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Topics></Topics>,
         },
-        { path: "/topic", element: <Topics></Topics> },
+
         {
           path: "/cart/:cartId",
           loader: ({ params }) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.cartId}`);
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.cartId}`
+            );
           },
           element: <FReact></FReact>,
         },
         { path: "/statistic", element: <Statistics></Statistics> },
         { path: "/blog", element: <Blog></Blog> },
         { path: "/freact", element: <FReact></FReact> },
+      
       ],
+      
     },
+
     { path: "*", element: <Error></Error> },
   ]);
   return (
