@@ -1,17 +1,24 @@
+.one{
+    background-color: royalblue;
 
+}
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-.active{
-    background-color: aquamarine;   
-}
+
 .navLink a{
     margin-left: 10px;
     font-size: 20px;
     text-decoration: none;
+    color:white;
+    font-size: 23px;
+    font-weight: 500;
 
 }
-.link a:hover{
-    background-color: aqua;
+.navLink a:hover{
+    color:orangered;
 }
