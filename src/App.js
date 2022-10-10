@@ -40,7 +40,7 @@ function App() {
     { path: "*", element: <Error></Error> },
   ]);
   return (
-    <div className="App">
+    <div >
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
