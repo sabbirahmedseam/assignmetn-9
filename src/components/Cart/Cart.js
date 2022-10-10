@@ -2,19 +2,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import "./Cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = ({ data }) => {
-  const { name, logo, total } = data;
+  const { id,name, logo, total } = data;
 
   return (
     <div className="cart">
       <img src={logo} alt="" />
+      <p>{total}</p>
      <div className="button">
      <b>{name}</b>
-        <button>
+        <Link to={`/cart/${id}`}><button>
           <span> Start Practice
             <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></span>
-        </button>
+        </button></Link>
      </div>
     </div>
   );
