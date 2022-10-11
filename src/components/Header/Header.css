@@ -1,24 +1,25 @@
-.one{
-    background-color: royalblue;
-
+.one {
+  background-color: royalblue;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.navLink a{
-    margin-left: 20px;
-    font-size: 20px;
-    text-decoration: none;
-    color:white;
-    font-size: 23px;
-    font-weight: 500;
-
+.header h1 {
+  color:goldenrod;
 }
-.navLink a:hover{
-    color:orangered;
+.navLink a {
+  margin-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+}
+.navLink a:hover {
+  color: orangered;
 }

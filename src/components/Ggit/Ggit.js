@@ -22,14 +22,14 @@ const Ggit = ({ item, handleClick }) => {
 
   return (
     <div className="qPaper">
-      <h3>
+      <h1>
         <li>Quiz:{question}</li>
 
         <FontAwesomeIcon
           onClick={() => handleClick(correctAnswer)}
           icon={faEye}
         ></FontAwesomeIcon>
-      </h3>
+      </h1>
       <div className="gitt">
         {options.map((item, idx) => (
           <Tcss key={idx} item={item} btnClick={btnClick}></Tcss>
