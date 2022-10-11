@@ -1,34 +1,31 @@
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-// import { ToastContainer, toast } from "react-toastify";
+import React, { useState } from "react";
+
 import Tcss from "../Tcss/Tcss";
 import "./Ggit.css";
 
-import "react-toastify/dist/ReactToastify.css";
-import { toast, ToastContainer } from "react-toastify";
-
 const Ggit = ({ item }) => {
   const { correctAnswer, options, question } = item;
-  // console.log(correctAnswer);
-  // console.log(item);
-  const handleClick = (correctAnswer) => {
-    toast(correctAnswer);
-    // alert("okay");
-  };
 
+  // console.log(options);
+  // console.log(item);
+  const [ans, setAns] = useState([]);
+
+  const handleClick = (correctAnswer) => {
+    setAns(correctAnswer);
+    // alert("okay");
+    console.log(correctAnswer);
+  };
+  console.log(ans);
   return (
-    <div>
-      <ToastContainer></ToastContainer>
+    <div className="qPaper">
       <h3>
-     
         Quiz:{question}
-       
-          <FontAwesomeIcon
-            onClick={()=>handleClick(correctAnswer)}
-            icon={faEye}
-          ></FontAwesomeIcon>
-       
+        <FontAwesomeIcon
+          onClick={() => handleClick(correctAnswer)}
+          icon={faEye}
+        ></FontAwesomeIcon>
       </h3>
       <div className="gitt">
         {options.map((item, idx) => (

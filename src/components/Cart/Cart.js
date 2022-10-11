@@ -10,7 +10,7 @@ const Cart = ({ data }) => {
   return (
     <div className="cart">
       <img src={logo} alt="" />
-      <p>{total}</p>
+     <h3>Total Questions:{total}</h3>
      <div className="button">
      <b>{name}</b>
         <Link to={`/cart/${id}`}><button>

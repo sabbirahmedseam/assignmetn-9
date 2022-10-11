@@ -1,10 +1,27 @@
-.cart{
-    background-color: lightblue;
+.cart {
+  border: 2px solid goldenrod;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 5px;
 }
-.cart img{
-    width: 100%;
+.cart img {
+    border-radius: 5px;
+
+  width: 100%;
+  background-color: lightblue;
 }
-.button{
-    display: flex;
-    justify-content: space-between;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.button button {
+    font-size: 20px;
+    border-radius: 10px;
+  margin-right: 20px;
+  border: none;
+  padding: 15px;
+  background-color: cornflowerblue;
 }
