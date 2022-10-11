@@ -35,7 +35,6 @@ function App() {
           element: <Statistics></Statistics>,
         },
         { path: "/blog", element: <Blog></Blog> },
-       
       ],
     },
 

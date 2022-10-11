@@ -10,13 +10,11 @@ const FReact = () => {
   const [ans, setAns] = useState([]);
   const test = useLoaderData();
   const { name, questions } = test.data;
-  // console.log(name,questions);
 
 
-  // console.log(name, questions);
-  // console.log(test);
+ 
   const handleClick = (correctAnswer) => {
-    toast(correctAnswer);
+    toast('correct ans:'+correctAnswer);
     const newAns = [...ans, correctAnswer];
     setAns(newAns);
   };

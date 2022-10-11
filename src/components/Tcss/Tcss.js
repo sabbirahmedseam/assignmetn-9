@@ -1,23 +1,22 @@
 import React from "react";
 import "./Tcss.css";
 
-const Tcss = ({ item,btnClick }) => {
-//   console.log(item);
+const Tcss = ({ item, btnClick }) => {
+  //   console.log(item);
   return (
-    // <div className='radio'>
-    //   <button>
+    <div className="radio">
+      <input
+        onClick={() => btnClick(item)}
+        type="radio"
+        name="opt"
+        id={item}
+        value={item}
+      />
 
-    //    <input type="radio" name="opt" id={item} value={item} />
-    //    <label htmlFor={item}><b>{item}</b></label>
-    //   </button>
-    // </div>
-    <button onClick={()=>btnClick(item)} className="radio">
-      <input type="radio" name="opt" id={item} value={item} />
-     
       <label htmlFor={item}>
         <b>{item}</b>
       </label>
-    </button>
+    </div>
   );
 };
 

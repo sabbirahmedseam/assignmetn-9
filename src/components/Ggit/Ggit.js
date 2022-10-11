@@ -1,6 +1,5 @@
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Tcss from "../Tcss/Tcss";
@@ -15,17 +14,20 @@ const Ggit = ({ item, handleClick }) => {
   const btnClick = (value) => {
     console.log(value);
     if(value===correctAnswer){
-      alert('okay');
+      toast('your answer is correct');
     }
     else{
-      alert('wrong');
+     toast('wrong answer');
     }
   };
 
   return (
     <div className="qPaper">
+    
       <h3>
-        <p> Quiz:{question}</p>
+       
+        <li>Quiz:{question}</li>
+      
 
         <FontAwesomeIcon
           onClick={() => handleClick(correctAnswer)}
