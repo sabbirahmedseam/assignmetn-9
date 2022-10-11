@@ -13,15 +13,15 @@ const Ggit = ({ item }) => {
   const [ans, setAns] = useState([]);
 
   const handleClick = (correctAnswer) => {
-    setAns(correctAnswer);
-    // alert("okay");
-    console.log(correctAnswer);
+    // setAns(correctAnswer);
+    alert(correctAnswer);
+    // console.log(correctAnswer);
   };
   console.log(ans);
   return (
     <div className="qPaper">
       <h3>
-        Quiz:{question}
+       <p> Quiz:{question}</p>
         <FontAwesomeIcon
           onClick={() => handleClick(correctAnswer)}
           icon={faEye}

@@ -1,8 +1,9 @@
 import React from "react";
+import './Blog.css'
 
 const Blog = () => {
   return (
-    <div>
+    <div className="blog">
       <h3>Purpose of React Router: </h3>
       <span>
         React Router, and dynamic, client-side routing, allows us to build a
