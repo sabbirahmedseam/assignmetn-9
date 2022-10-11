@@ -1,12 +1,11 @@
 .cart {
-  
   border: 2px solid goldenrod;
   margin-bottom: 30px;
   padding: 5px;
   border-radius: 5px;
 }
 .cart img {
-    border-radius: 5px;
+  border-radius: 5px;
 
   width: 100%;
   background-color: lightblue;
@@ -19,8 +18,8 @@
   margin-bottom: 10px;
 }
 .button button {
-    font-size: 20px;
-    border-radius: 10px;
+  font-size: 20px;
+  border-radius: 10px;
   margin-right: 20px;
   border: none;
   padding: 15px;

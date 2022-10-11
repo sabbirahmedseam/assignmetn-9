@@ -1,18 +1,16 @@
-
-.qPaper{
-    /* border: 1px solid black; */
-    margin: 10px;
+.qPaper {
+  margin: 10px;
 }
-.qPaper h3{
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.qPaper h3 {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.gitt{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 10px;
-margin-bottom: 20px;
+.gitt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
 }

@@ -11,14 +11,11 @@ const FReact = () => {
   const test = useLoaderData();
   const { name, questions } = test.data;
 
-
- 
   const handleClick = (correctAnswer) => {
-    toast('correct ans:'+correctAnswer);
+    toast("correct ans:" + correctAnswer);
     const newAns = [...ans, correctAnswer];
     setAns(newAns);
   };
-  // console.log(ans);
   return (
     <div className="quizz">
       <ToastContainer></ToastContainer>

@@ -1,5 +1,5 @@
 import React from "react";
-import './Statistics.css';
+import "./Statistics.css";
 import {
   BarChart,
   Bar,
@@ -42,12 +42,12 @@ const Statistics = () => {
   ];
 
   return (
-   <div className="chart">
-     <BarChart width={500} height={400}  data={item}>
-      <Bar dataKey="total" fill="#8884d8" />
-      <Tooltip></Tooltip>
-    </BarChart>
-   </div>
+    <div className="chart">
+      <BarChart width={500} height={400} data={item}>
+        <Bar dataKey="total" fill="#8884d8" />
+        <Tooltip></Tooltip>
+      </BarChart>
+    </div>
   );
 };
 

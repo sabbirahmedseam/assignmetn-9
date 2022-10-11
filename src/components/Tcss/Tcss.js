@@ -2,7 +2,6 @@ import React from "react";
 import "./Tcss.css";
 
 const Tcss = ({ item, btnClick }) => {
-  //   console.log(item);
   return (
     <div className="radio">
       <input
