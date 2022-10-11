@@ -14,10 +14,12 @@ const FReact = () => {
   const handleClick = (correctAnswer) => {
     toast("correct ans:" + correctAnswer);
     const newAns = [...ans, correctAnswer];
+
     setAns(newAns);
   };
   return (
     <div className="quizz">
+      
       <ToastContainer></ToastContainer>
       <h2> Quiz of {name}</h2>
       {questions.map((item) => (
